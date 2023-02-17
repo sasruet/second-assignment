@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    
+}
+.first-section{
+    margin: 0px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(255, 144, 14, 0.1) ;
+}
+.header{
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+.header h1,nav{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content:space-between ;
+    
+    
+}
+nav a:hover{
+    font-weight: 700;
+}
+.brand{
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.brand h1{
+    margin: 0px;
+    font-weight: 700;
+    font-size:3em;
+}
+    
+.explore {
+    background-color:#FF900E ;
+    border: none;
+    height: 64px;
+    width: 180px;
+    border-radius: 8px;
+    margin-top: 20px;
+    
+}
+.explore a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.banner{
+    width: 100%;
+    margin-top: 50px;
+}
+.second-section{
+    margin-top: 130px;
+    padding: 0 10%;
+    /* height: 800px; */
+    display:flex ;
+    align-items: center;
+}
+.grid{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5%;
+    align-items: center;
+}
+.grid img{
+    width: 100%;
+}
+.quick-list{
+    width: 40%;
+    height: 20%;
+    margin-left:10% ;
+}
+.quick-title{
+    font-size: 45px;
+}
+.quick-list article{
+    font-size: 16px;
+    font-weight: 400;
+}
+.third-section{
+    margin-top: 130px;
+    /* height: 1059px; */
+    display: flex;
+    padding: 0 10%;
+}
+.features{
+    width: 50%;
+}
+.features-title{
+    margin-top: 0%;
+    border-left: 5px solid #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+.architect{
+    width:50%;
+}
+.architect img{
+    width: 100%;
+}
+.features > div{
+    padding-left: 1%;
+    box-shadow: 0px 4px 30px 0px #0000000F;
+
+}
+.features div p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.year-btn{
+    width: 342px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    position: absolute;
+    left: 37%;
+    top: 2400px;
+}
+.explore:hover, .year-btn:hover{
+    box-shadow: 0px 4px 30px 0px #FF900E;
+    background-color: #e7721e;
+    transition: background-color 1s;
+}
+.fourth-section{
+    padding: 0% 5%;
+    margin-top: 130px;
+}
+.facts{
+    width: 50%;
+}
+.achievements a{
+    text-decoration: none;
+    color: black;
+}
+.achieve{
+    height:200px;
+    width: 240px;
+    ;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 30px 0px #0e16ff;
+    /* padding-top: 50px; */
+}
+.achieve:hover{
+    background-color: #1b20ac;
+    color: aliceblue;
+    transition: background-color 1s;
+}
+.achievements{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    
+}
+.sponsors{
+    width: 30%;
+    text-align: center;
+}
+.fifth-section{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sponsors-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    align-items: center;
+}
+.sponsors-grid a img{
+    width: 100%;
+    height: 50px;
+}
+footer{
+    margin: 100px 10%;
+    padding: 0 10%;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+.footer{
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:576px ) {
+    .header{
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header h1,nav{
+        width: 100%;
+}
+.first-section,.fourth-section{
+    padding: 0;
+}
+.brand{
+    width: 100%;
+}
+.brand{
+    width:100%;
+}
+
+.second-section,.fifth-section{
+    padding: 0;
+    display:flex ;
+    flex-direction: column;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5%;
+    align-items: center;
+}
+.quick-list{
+    width: 100%;
+    height: 20%;
+    margin-left:0 ;
+}
+.third-section{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.features, .architect,.facts{
+    width: 100%;
+}
+.year-btn{
+    width: 200px;
+    height: 100px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    position: static;
+}
+.achievements{
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.sponsors-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+}
+.sponsors{
+    width: 100%;
+}
+.footer{
+    margin: 0px;
+    padding: 0px;
+}
+}
